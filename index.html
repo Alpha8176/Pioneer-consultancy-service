@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pioneer Consultancy Service</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pioneer Consultancy Service</h1>
+    <p>Real Estate Solutions by Prabhakar</p>
+    <p><strong>Founder:</strong> G PRABHAKAR</p>
+  </header>
+
+
+  <!-- Add this for the hamburger menu in the top right -->
+  <div class="corner-menu">
+    <button id="menuToggle">&#9776;</button>
+    <div id="menuDropdown" class="menu-dropdown">
+      <a href="#services">Services</a>
+      <a href="#listings">Listings</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <section id="hero">
+    <h2>Your Dream Property Awaits</h2>
+    <button onclick="showAlert()">Explore Now</button>
+  </section>
+
+  <section id="services">
+    <h3>Our Services</h3>
+    <ul>
+      <li>Residential Property Consulting</li>
+      <li>Commercial Space Leasing</li>
+      <li>Legal & Documentation Support</li>
+    </ul>
+  </section>
+
+  <section id="listings">
+    <h3>Featured Listings</h3>
+    <div class="listing">
+      <h4>Luxury Apartment in Delhi</h4>
+      <p>3 BHK | ₹1.2 Cr | Prime Location</p>
+    </div>
+    <div class="listing">
+      <h4>Office Space in Gurgaon</h4>
+      <p>2000 sq.ft | ₹75K/month | Fully Furnished</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pioneer Consultancy Service | Owned by Prabhakar</p>
+    <p><strong>Contact:</strong> +91 9999994753</p>
+    <p><strong>Email:</strong> <a href="mailto:prabhakar@pcsglobal.co">prabhakar@pcsglobal.co</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

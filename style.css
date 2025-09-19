@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #90ee90;
+  color: #145a32; /* Dark green for text contrast */
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #145a32; /* Dark green for nav links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #333; /* Slightly darker on hover */
+}
+
+#hero {
+  background: url('pcs.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#hero button {
+  padding: 10px 20px;
+  background: #90ee90; /* Light green accent */
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.listing {
+  background: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-left: 5px solid #90ee90; /* Light green accent */
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form button {
+  background: #90ee90; /* Light green accent */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header, #hero {
+  animation: fadeIn 1.2s ease;
+}
+
+.menu-bar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 100;
+}
+
+.menu-bar ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar a {
+  background: #145a32;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.menu-bar a:hover {
+  background: #117a3a;
+}
+
+.corner-menu {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 200;
+}
+
+#menuToggle {
+  background: #145a32;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #145a32;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  min-width: 140px;
+  flex-direction: column;
+}
+
+.menu-dropdown a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.menu-dropdown a:hover {
+  background: #117a3a;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  section, header, #hero {
+    padding: 20px 5px;
+  }
+  #hero h2 {
+    font-size: 1.2em;
+  }
+  .listing {
+    padding: 10px;
+  }
+}
+
